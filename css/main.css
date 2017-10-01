@@ -1,0 +1,607 @@
+ul {
+	list-style: none;
+	padding: 0;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrap{
+	max-width: 1600px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.layout {
+	width: 1200px;
+	min-width: 900px;
+	margin: 0 auto;
+}
+.nav{
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0; 
+	right: 0;
+	left: 0;
+	padding: 15px 0;
+	z-index: 6;
+	/* border: 1px solid; */
+}
+.nav .home {
+	float: left;
+	
+}
+.nav .home a{
+	font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+	color: #fed136;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 48px;
+}
+.nav ul {
+	float: right;
+	margin: 0;
+}
+.nav ul .nav-item{
+	float: left;
+	margin-left: 5px;
+}
+.nav ul .nav-item a{
+	text-decoration: none;
+	display: block;
+	padding: 15px 10px;
+	color: #fff;
+	border-radius: 4px;
+}
+.nav ul .nav-item a:hover{
+	background: #fed136;
+}
+/*======================header css=============================*/
+.header{
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+.header .layout{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+}
+.header .layout>h2{
+	font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+.header .layout>h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+}
+.header .layout>button{
+	background: #fed136;
+	border: none;
+	color: #fff; 
+	text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+    line-height: 18px;
+}
+.header .carousel{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+.header .carousel ul,.header .carousel li,.header *{
+	margin: 0;
+	padding: 0;
+}
+.header .carousel .img-list li:nth-child(1){
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506362286563&di=6d71dc70d3a7139ce218134ad88a2753&imgtype=0&src=http%3A%2F%2Fbizhi.pcze.com%2Fzhuomian%2F1920x1200_1600x900%2F290.jpg'),0,0,no-repeat;
+	background-size: cover;
+}
+.header .carousel .img-list li:nth-child(2){
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506362217774&di=175423ac90dd5fd0f731bb910b1c27f3&imgtype=0&src=http%3A%2F%2Fp3.gexing.com%2Fshaitu%2F20130206%2F1202%2F5111d5b800bfd.jpg'),0,0,no-repeat;
+	background-size: cover;
+}
+.header .carousel .img-list li:nth-child(3){
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506362260033&di=3c825817ee8317790f5bc5641f692ba1&imgtype=0&src=http%3A%2F%2Fbizhi.pcze.com%2Fzhuomian%2F1920x1200_1600x900%2F222261.jpg'),0,0,no-repeat;
+	background-size: cover;
+}
+.header .carousel .img-list li:nth-child(4){
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506362286563&di=6d71dc70d3a7139ce218134ad88a2753&imgtype=0&src=http%3A%2F%2Fbizhi.pcze.com%2Fzhuomian%2F1920x1200_1600x900%2F290.jpg'),0,0,no-repeat;
+	background-size: cover;
+}
+.header .carousel .img-list li:nth-child(5){
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506362217774&di=175423ac90dd5fd0f731bb910b1c27f3&imgtype=0&src=http%3A%2F%2Fp3.gexing.com%2Fshaitu%2F20130206%2F1202%2F5111d5b800bfd.jpg'),0,0,no-repeat;
+	background-size: cover;
+}
+.header .img-list{
+	position: absolute;
+	height: 800px;
+	width: 100%;
+}
+.header .img-list>li{
+	float: left;
+	width: 20%;
+	height: 800px;
+
+}
+.header .left{
+	position: absolute;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.4);
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	top: 50%;
+	left: 10px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+.header .right{
+	position: absolute;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.4);
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	top: 50%;
+	right: 10px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+.header .right:hover,.header .left:hover{
+	background: rgba(255,255,255,0.6);
+}
+.header .img-order{
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	transform: translate(-50%,0);
+}
+.header .img-order li{
+	width: 40px;
+	height: 5px;
+	float: left;
+	margin-right: 5px; 
+	background: rgba(255,255,255,0.5);
+	border-radius: 8px;
+	cursor: pointer;
+}
+.header .img-order li.active{
+	background: rgba(255,255,255,0.8);
+}
+/*==================service css=============================*/
+.service{
+	text-align: center;
+	padding: 100px 0;
+}
+.service h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #333;
+}
+.service .sub-title{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+}
+.service ul{
+	font-size: 0;
+	margin-top: 100px;
+}
+.service ul .service-item{
+	display: inline-block;
+	width: 33.33%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.service ul .service-item span{
+	font-size: 56px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	color: #FFF;
+	padding: 20px;
+	background: #fed136;
+	border-radius: 50%;
+}
+.service ul .service-item h3{
+	font-size: 18px;
+	margin-top: 50px;
+	color: #333;
+	font-weight: 800;
+}
+.service ul .service-item p{
+	font-size: 14px;
+	color: #777;
+	line-height: 25px;
+}
+/*===============portfolio================*/
+.portfolio{
+	text-align: center;
+	background: #f7f7f7;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.portfolio .show{
+	position: relative;
+}
+.portfolio .layout .header{
+	margin-bottom: 50px;
+}
+.portfolio h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #333;
+}
+.portfolio .sub-title{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+}
+.portfolio .show{
+	height: 500px;
+}
+.portfolio .show-item{
+	 position: absolute; 
+	box-sizing: border-box;
+	width: 380px;
+	margin: 0 10px 20px 10px;
+	
+	/* padding: 0 10px; */
+}
+.portfolio .show-item span{
+	position: absolute;
+	color: #fff;
+	display: none;
+	width: 90%;
+	left: 5%;
+	font-size: 50px;
+	padding: 76px 0;
+	background: #fed136;
+	opacity: 0.9;
+	
+}
+.portfolio .show-item:hover span{
+	display: block;
+	cursor: pointer;
+}
+.portfolio .show-item img{
+	width: 90%;
+}
+.portfolio .show-item .info{
+	display: inline-block;
+	width: 90%;
+	background: #fff;
+}
+.portfolio .show-item .info p:first-child{
+	font-weight: 800;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+}
+.portfolio .show-item .info p:last-child{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+	text-transform: capitalize;
+}
+.portfolio .more{
+	position: relative;
+	bottom: 10px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #fed136;
+	color:#FFF;
+	cursor: pointer;
+}
+/* ------------------------------about---------------------------- */
+.about{
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.about h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #333;
+}
+.about .sub-title{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+	margin-bottom: 90px;
+}
+.about ul .about-item{
+	text-align: center;
+	display: block;
+	position: relative;
+	padding-bottom: 125px;
+}
+.about ul .about-item img{
+	width: 160px;
+	border: 7px solid #f1f1f1;
+	border-radius: 50%; 
+}
+.about ul .about-item div{
+	position: absolute;
+	right: 50%;
+	top: 0;
+	margin-right: 105px;
+	margin-top: -10px;
+	text-align: right;
+	width: 340px;
+}
+.about ul .about-item:nth-child(even) div{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: 105px;
+	margin-top: -10px;
+	text-align: left;
+	width: 340px;
+}
+.about ul .about-item div p:nth-child(1){
+	font-size: 18px;
+	font-weight: 800;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.about ul .about-item div p:nth-child(2){
+	font-size: 18px;
+	font-weight: 800;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.about ul .about-item div p:nth-child(3){
+	font-size: 14px;
+	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #777;
+    line-height: 20px;
+}
+.about ul .about-item:after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	border-left: 2px solid #f1f1f1;
+	margin-left: -1px;
+	z-index: -3;
+}
+.about ul .about-item:first-child{
+	padding-top: 0;
+}
+.about ul .about-item:last-child p{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background: #fed136;
+	border: 7px solid #f1f1f1;
+	margin: 0 auto; 
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	line-height: 32px;
+}
+.about ul .about-item:last-child{
+	padding-bottom: 0;
+}
+/*==========team css==================*/
+.team{
+	text-align: center;
+	background: #f7f7f7;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.team h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #333;
+}
+.team .sub-title{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+	margin-bottom: 90px;
+}
+.team ul li{
+	display: inline-block;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.team ul .team-list img{
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+.team ul .team-list p{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #777;
+}
+.team ul .team-list .design-name{
+	font-style: normal;
+	color: #000;
+	font-size: 18px;
+	font-weight: 800;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.team ul .team-list .icon-list li{
+	margin: 8px;
+}
+.team ul .team-list .icon-list li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 40px;
+}
+.team .layout>p{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #777;
+    width: 800px;
+    margin: 60px auto;
+}
+/*=========== support css ==================*/	
+.support .support-itme{
+	text-align: center;
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/*================ contact css ======================*/
+.contact{
+	background-image: url("http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png");
+	background-color: #111;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.contact h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #fff;
+}
+.contact .sub-title{
+	font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: #aaa;
+	margin-bottom: 90px;
+}
+.contact .left-form{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+.contact .right-form{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+
+}
+.contact .form-item input::-webkit-input-placeholder,
+.contact .form-item textarea::-webkit-input-placeholder
+{
+	font-weight: 700;
+}
+.contact .form-item input[type="text"]{
+	padding: 20px;
+	width: 80%;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 22px;
+	outline: none;
+}
+.contact .form-item textarea{
+	padding: 20px;
+	width: 80%;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	outline: none;
+}
+.contact button{
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	background: #fed136;
+	padding: 20px 40px; 
+	font-weight: 800;
+	cursor: pointer;
+}
+/*=========== footer css ===============*/
+.footer .copyright{
+	line-height: 40px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    width: 33%;
+	box-sizing:border-box;
+}
+.footer ul,li{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.footer ul{
+	width: 33%;
+	box-sizing:border-box;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	font-size: 40px;
+	color: #000;
+}
+.footer .layout>div{
+	display: inline-block;
+	width: 32%;
+	box-sizing:border-box;
+	text-align: right;
+}
+.footer .layout>div a{
+	margin-right: 10px;
+	color: #fed136;
+	text-decoration:  none;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.footer .layout>div a:hover{
+	text-decoration: underline;
+}
+.wrap .up button{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	border: none;
+	background: rgba(255,255,255,0.6);
+	color: #fed136;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+	cursor: pointer;
+}

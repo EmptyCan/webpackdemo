@@ -1,0 +1,22 @@
+{
+  "name": "webpackdemo",
+  "version": "1.0.0",
+  "main": ".router.js",
+  "dependencies": {
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
